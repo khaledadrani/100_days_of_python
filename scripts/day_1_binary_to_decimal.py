@@ -4,6 +4,14 @@ def binary_to_decimal(nb):
     nb = sum([int(nb[i])*2**i for i in range(len(nb))])
     return nb
 
+def decimal_to_binary(nb):
+    o = ""
+    while nb>0:
+        rest = nb % 2
+        nb = nb // 2
+        o += str(rest)
+    return o[::-1]
+
 
 def test_binary_to_decimal(func):
 
@@ -21,5 +29,6 @@ def all_tests():
 
 
 if __name__ == "__main__":
-    #print(binary_to_decimal(nb=1010))
-    all_tests()
+    #print(binary_to_decimal(nb=11101))
+    #all_tests()
+    print(decimal_to_binary(nb=29))
