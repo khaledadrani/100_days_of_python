@@ -54,7 +54,7 @@ def bin_to_hex(nb):
 
     print('groups ',groups)
 
-    res = "".join([binary_to_decimal("".join(group)) for group in groups])
+    res = "".join([binary_to_decimal(int("".join(group))) for group in groups])
 
     return decimal_to_hex(res)
 
@@ -62,21 +62,12 @@ def bin_to_hex(nb):
 hexa = "AAAA"
 decim = 43690
 
-correct_res = hexa
+
 
 print(decim)
+print(hexa)
 print(decimal_to_binary(decim))
 print(bin_to_hex("1010101010101010"))
 #print(correct_res)
 
 
-
-#first regulate all converters!!!!
-# decimal binary hexa octal 
-# data structures (dict for memory and registers probably)
-# processor? a class yes POO
-
-#re write code as a library!
-#https://stackoverflow.com/questions/4964975/is-it-possible-to-program-in-binary
-#http://ref.x86asm.net/
-#https://timelessname.com/elfbin/
