@@ -25,3 +25,9 @@ first need to rework the code of functions
 * https://stackoverflow.com/questions/4964975/is-it-possible-to-program-in-binary
 * http://ref.x86asm.net/
 * https://timelessname.com/elfbin/
+
+
+# day3: put link from history don't forget
+
+# day4: simple file manager
+https://techvidvan.com/tutorials/python-project-file-manager/

@@ -17,53 +17,83 @@ def open_window():
 # open file function
 def open_file():
     string = open_window()
+    
+    if string is None:
+        return 
+
     try:
-        os.startfile(string)
+        os.startfile(string) #execute file 
     except:
-        mb.showinfo('confirmation', "File not found!")
+        mb.showinfo('Confirmation', "File not found!")
 
 # copy file function
 def copy_file():
     source1 = open_window()
     destination1=filedialog.askdirectory()
-    shutil.copy(source1,destination1)
+    shutil.copy(source1,destination1) #copy file from source to destination
     mb.showinfo('confirmation', "File Copied !")
 
 # delete file function
 def delete_file():
     del_file = open_window()
+
+    if del_file is None:
+        return
+
     if os.path.exists(del_file):
         os.remove(del_file)             
     else:
         mb.showinfo('confirmation', "File not found !")
 
+def enter_user_input(message="Enter a value",title="Value input",default="Enter here..."):
+    
+    value = easygui.enterbox(message,title,default)
+    return value
+
 # rename file function
 def rename_file():
     chosenFile = open_window()
+
+    if chosenFile is None:
+        return 
+
     path1 = os.path.dirname(chosenFile)
     extension=os.path.splitext(chosenFile)[1]
-    print("Enter new name for the chosen file")
-    newName=input()
-    path = os.path.join(path1, newName+extension)
-    print(path)
-    os.rename(chosenFile,path) 
-    mb.showinfo('confirmation', "File Renamed !")
+    #print("Enter new name for the chosen file")
+    try:
+        new_name = enter_user_input("Enter new name for the chosen file","New File Name")
+        if new_name is None:
+            return
+        path = os.path.join(path1, new_name+extension)
+        print(path)
+        os.rename(chosenFile,path) 
+        mb.showinfo('confirmation', "File Renamed !")
+    except Exception as err:
+        mb.showerror('An Error has occured!',str(err))
 
 # move file function
 def move_file():
     source = open_window()
+    if source is None:
+        return
     destination =filedialog.askdirectory()
-    if(source==destination):
-        mb.showinfo('confirmation', "Source and destination are same")
-    else:
-        shutil.move(source, destination)  
-        mb.showinfo('confirmation', "File Moved !")
+    if destination is None:
+        mb.showerror('Error','You must select a destination!')
+
+    try:
+        if(source==destination):
+            mb.showinfo('confirmation', "Source and destination are same")
+        else:
+            shutil.move(source, destination)  
+            mb.showinfo('confirmation', "File Moved !")
+    except Exception as err:
+        mb.showerror('An Error has occured!',str(err))
 
 # function to make a new folder
 def make_folder():
     newFolderPath = filedialog.askdirectory()
-    print("Enter name of new folder")
-    newFolder=input()
+    message = "Enter name of new folder"
+    newFolder= enter_user_input(message,"New Folder Name")
     path = os.path.join(newFolderPath, newFolder)  
     os.mkdir(path)
     mb.showinfo('confirmation', "Folder created !")
@@ -71,18 +101,19 @@ def make_folder():
 # function to remove a folder
 def remove_folder():
     delFolder = filedialog.askdirectory()
+    if delFolder is None:
+        return
     os.rmdir(delFolder)
-    mb.showinfo('confirmation', "Folder Deleted !")
+    mb.showinfo('confirmation', "Folder Deleted!")
 
 # function to list all the files in folder
 def list_files():
     folderList = filedialog.askdirectory()
-    sortlist=sorted(os.listdir(folderList))       
-    i=0
-    print("Files in ", folderList, "folder are:")
-    while(i<len(sortlist)):
-        print(sortlist[i]+'\n')
-        i+=1
+    sortlist=sorted(os.listdir(folderList))
+    text = '\n'.join(sortlist)
+    output = easygui.textbox(text=text)
+    print(output)
+    
     
 
 #Creating the UI of our file manager
@@ -90,7 +121,7 @@ def list_files():
 root = Tk()
 
 # creating label and buttons to perform operations
-Label(root, text="TechVidvan File Manager", font=("Helvetica", 16), fg="blue").grid(row = 5, column = 2)
+Label(root, text="Simple File Manager", font=("Helvetica", 16), fg="blue").grid(row = 5, column = 2)
 
 Button(root, text = "Open a File", command = open_file).grid(row=15, column =2)
 
