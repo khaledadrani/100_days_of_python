@@ -27,7 +27,19 @@ first need to rework the code of functions
 * https://timelessname.com/elfbin/
 
 
-# day3: put link from history don't forget
+# day3: Python packaging
+
+https://towardsdatascience.com/how-to-package-your-python-code-df5a7739ab2e
+https://python-packaging-tutorial.readthedocs.io/en/latest/setup_py.html
 
 # day4: simple file manager
 https://techvidvan.com/tutorials/python-project-file-manager/
+
+# day5: Intermediate Python Beginning
+
+* data structures: list, tuple, dictionary, set, frozenset
+* strings: similar to list, split join, f strings, format
+* collections: Counter, namedTuple, OrderedDict, defaultdict
+* itertools: permutations
+
+ 
