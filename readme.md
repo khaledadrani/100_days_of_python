@@ -42,4 +42,6 @@ https://techvidvan.com/tutorials/python-project-file-manager/
 * collections: Counter, namedTuple, OrderedDict, defaultdict
 * itertools: permutations
 
- 
+ # day6: Intermediate Python 
+
+ * itertools: cartesian product, permutations, combinations, combinations_with_replacement,accumulate, groupby, count, repeat, cycle
