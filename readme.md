@@ -42,6 +42,17 @@ https://techvidvan.com/tutorials/python-project-file-manager/
 * collections: Counter, namedTuple, OrderedDict, defaultdict
 * itertools: permutations
 
- # day6: Intermediate Python 
+# day6: Intermediate Python 
 
- * itertools: cartesian product, permutations, combinations, combinations_with_replacement,accumulate, groupby, count, repeat, cycle
+* itertools: cartesian product, permutations, combinations, combinations_with_replacement,accumulate, groupby, count, repeat, cycle
+* JSON: load, loads, dump
+* Exceptions: predefined, raise, custom
+* lambda: basics, map, reduce, filter
+
+# day7: Intermediate Python
+
+* logging: root, custom, formatter, streamhandler, filehandler, rotatefilehandler, timedrottatefilehandler, json-formatter
+* random numbers: random, secrets, numpy
+* generators: function, next, for, comprehension, sys.getsiszeof()
+* decorators: basic, wrapper, with args, nested, class
+* threads and processes: def, great, bad, GIL, target, args, start, join
