@@ -56,3 +56,8 @@ https://techvidvan.com/tutorials/python-project-file-manager/
 * generators: function, next, for, comprehension, sys.getsiszeof()
 * decorators: basic, wrapper, with args, nested, class
 * threads and processes: def, great, bad, GIL, target, args, start, join
+
+# day8: Intermediate Python
+
+* Threading: Thread, Lock, Queue, q.put, q.get, With Lock, q.task_done, current_thread
+* Multirpocessing: Process, Value.value, Array[i], Lock, current_process, q.put
