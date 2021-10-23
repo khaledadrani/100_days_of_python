@@ -1,5 +1,6 @@
-Following the course of this link. Trying to implement stuff on my own
-https://dev.to/iamdurga/day-1-of-100-days-of-code-python-basics-2e0m
+I used these links to build my learning path:
+* https://dev.to/iamdurga/day-1-of-100-days-of-code-python-basics-2e0m
+* https://www.youtube.com/watch?v=HGOBQPFzWKo&t=18535s
 
 
 # day1: binary to decimal
