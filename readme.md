@@ -61,3 +61,10 @@ https://techvidvan.com/tutorials/python-project-file-manager/
 
 * Threading: Thread, Lock, Queue, q.put, q.get, With Lock, q.task_done, current_thread
 * Multirpocessing: Process, Value.value, Array[i], Lock, current_process, q.put
+
+# day9: Intermediate Python
+
+* Function arguments: positional args, keywords args, force keywords args, *args, **kwargs
+* Function scope: global var, local var, object reference, mutable vs immutable objects!
+* Asterik Operator: power, generate list/strings with repetition, args, kwargs, unpacking, merging, create lists and dicts using previous lists and dicts
+* Context managers: With, define as class, contextlib.contextmanager decorator, handle exceptions, resources
