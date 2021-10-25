@@ -68,3 +68,10 @@ https://techvidvan.com/tutorials/python-project-file-manager/
 * Function scope: global var, local var, object reference, mutable vs immutable objects!
 * Asterik Operator: power, generate list/strings with repetition, args, kwargs, unpacking, merging, create lists and dicts using previous lists and dicts
 * Context managers: With, define as class, contextlib.contextmanager decorator, handle exceptions, resources
+
+
+# day10: Unit testing
+
+* Unit Testing Your Code with the unittest Module: https://www.youtube.com/watch?v=6tNS--WetLI
+* Unittest: StartUp, TearDown, mocking, patch
+
