@@ -72,10 +72,5 @@ https://techvidvan.com/tutorials/python-project-file-manager/
 <<<<<<< HEAD
 
 
-# day10: Unit testing
-
-* Unit Testing Your Code with the unittest Module: https://www.youtube.com/watch?v=6tNS--WetLI
-* Unittest: StartUp, TearDown, mocking, patch
-
 =======
 >>>>>>> e8bc838a2fc29d04bce5731e06f788386dbb709e
