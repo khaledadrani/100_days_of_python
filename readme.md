@@ -1,6 +1,7 @@
 I used these links to build my learning path:
 * https://dev.to/iamdurga/day-1-of-100-days-of-code-python-basics-2e0m
 * https://www.youtube.com/watch?v=HGOBQPFzWKo&t=18535s
+* https://realpython.com/python-mock-library/
 
 
 # day1: binary to decimal
@@ -69,8 +70,15 @@ https://techvidvan.com/tutorials/python-project-file-manager/
 * Function scope: global var, local var, object reference, mutable vs immutable objects!
 * Asterik Operator: power, generate list/strings with repetition, args, kwargs, unpacking, merging, create lists and dicts using previous lists and dicts
 * Context managers: With, define as class, contextlib.contextmanager decorator, handle exceptions, resources
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e8bc838a2fc29d04bce5731e06f788386dbb709e
+# day10: Unit testing basics
+
+* Unit Testing Your Code with the unittest Module: https://www.youtube.com/watch?v=6tNS--WetLI
+* Unittest: StartUp, TearDown, mocking, patch
+
+
+# day11: Unit testing, the mock Object
+
+* Mock: substitue objects, side effects, iterative side effects
+
