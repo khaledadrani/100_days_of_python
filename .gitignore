@@ -3,3 +3,5 @@ env
 person.json
 \data
 \workspace
+
+script.py
